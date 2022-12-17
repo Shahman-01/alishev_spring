@@ -1,6 +1,5 @@
 package org.example.alishev;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
