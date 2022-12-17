@@ -14,11 +14,18 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="org.example.alishev.MusicPlayer" scope="prototype">
-        <property name="music" ref="musicBean"/>
-
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
+          class="org.example.alishev.ClassicalMusic"
+          init-method="doInit"
+          destroy-method="doDestroy"
+          factory-method="getClassicalMusic">
     </bean>
+
+<!--    <bean id="musicPlayer"-->
+<!--          class="org.example.alishev.MusicPlayer" scope="prototype">-->
+<!--        <property name="music" ref="musicBean"/>-->
+
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--    </bean>-->
 
 </beans>
