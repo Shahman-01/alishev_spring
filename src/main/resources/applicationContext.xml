@@ -14,8 +14,7 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="org.example.alishev.MusicPlayer"
-          scope="prototype">
+          class="org.example.alishev.MusicPlayer" scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
